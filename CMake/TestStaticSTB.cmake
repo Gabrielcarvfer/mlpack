@@ -17,9 +17,9 @@ if(NOT DEFINED CMAKE_HAS_WORKING_STATIC_STB)
   try_compile(CMAKE_HAS_WORKING_STATIC_STB
       ${CMAKE_BINARY_DIR}/CMakeFiles/CMakeTmp/
       SOURCES
-        ${CMAKE_SOURCE_DIR}/CMake/stb/main.cpp
-        ${CMAKE_SOURCE_DIR}/CMake/stb/a.cpp
-        ${CMAKE_SOURCE_DIR}/CMake/stb/b.cpp
+        ${PROJECT_SOURCE_DIR}/CMake/stb/main.cpp
+        ${PROJECT_SOURCE_DIR}/CMake/stb/a.cpp
+        ${PROJECT_SOURCE_DIR}/CMake/stb/b.cpp
       CMAKE_FLAGS "-DINCLUDE_DIRECTORIES=${STB_IMAGE_INCLUDE_DIR}"
       OUTPUT_VARIABLE out)
   if (CMAKE_HAS_WORKING_STATIC_STB)
