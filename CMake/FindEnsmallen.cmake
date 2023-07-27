@@ -9,6 +9,9 @@
 #  ENSMALLEN_VERSION_PATCH - patch version number
 #  ENSMALLEN_VERSION_STRING - version number as a string (ex: "1.0.4")
 #  ENSMALLEN_VERSION_NAME - name of the version (ex: "Antipodean Antileech")
+if(ENSMALLEN_FOUND)
+    return()
+endif()
 
 file(GLOB ENSMALLEN_SEARCH_PATHS
     ${CMAKE_BINARY_DIR}/deps/ensmallen-[0-9]*.[0-9]*.[0-9]*)
